@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="390dp"
+        android:layout_height="100dp"
+        android:padding="7dp"
+        app:cardBackgroundColor="#FFAA1C"
+        app:cardCornerRadius="12dp"
+        app:contentPadding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TaskTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center_vertical"
+            android:minWidth="48dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="This Is My Task 1 and"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DueTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="267dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:minWidth="48dp"
+            android:text="Due:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/PriorityID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"
+            android:gravity="center_vertical"
+            android:minWidth="48dp"
+            android:text="Priority: Medium"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/StatusID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="47dp"
+            android:gravity="center_vertical"
+            android:minWidth="48dp"
+            android:text="OnGoing"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:textSize="27dp"/>
+
+        <TextView
+            android:id="@+id/Deadline_TimeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="267dp"
+            android:layout_marginTop="42dp"
+            android:gravity="center_vertical"
+            android:minWidth="48dp"
+            android:text="10:00"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@android:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            android:buttonTint="#000000" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
